@@ -1,4 +1,4 @@
-import Project from "../models/Task.js";
+import Project from "../models/Project.js";
 
 export const removeTask = async (req, res) => {
   const taskId = req.params.id;

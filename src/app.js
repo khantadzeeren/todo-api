@@ -16,14 +16,4 @@ app.use(express.json());
 
 app.use(cors());
 
-
-
-// app.get(, GetAllTodo);
-
-// app.post(, addTask);
-
-// app.patch(, toggleTask);
-
-// app.delete(, removeTask);
-
 app.listen(3000);
