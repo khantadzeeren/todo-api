@@ -7,7 +7,7 @@ import { toggleTask } from "../controllers/doneTask.js";
 
 const router = Router();
 
-router.post("/item", addTask)
+router.post("/item", addTask);
 
 router.get("/items", GetAllTodo);
 
