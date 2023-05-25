@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: TODO APP
+  description: TODO App API
+  version: 0.1.9
+
+  servers:
+  - url: https://todo-api-j0cv.onrender.com
+    description:  production server 
+
+  - url: http://localhost:3000/api
+    description: local server
+ 
+  paths:
+    /items: 
+    get:
+      tags:
+      - Todos
+      response:
+      '200':
+      description: Successfully fetched
+      content:
+        application/json:
+          schema:
+            type: array
+              items:
+                type: string

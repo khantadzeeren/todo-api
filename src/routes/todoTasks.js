@@ -7,13 +7,13 @@ import { toggleTask } from "../controllers/doneTask.js";
 
 const router = Router();
 
-router.post("/api/item", addTask)
+router.post("/item", addTask)
 
-router.get("/api/items", GetAllTodo);
+router.get("/items", GetAllTodo);
 
-router.delete("/api/item/:id", removeTask);
+router.delete("/item/:id", removeTask);
 
-router.put("/api/item/:id", toggleTask );
+router.put("/item/:id", toggleTask );
 
  
 export default router;
