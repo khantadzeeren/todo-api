@@ -38,3 +38,19 @@ paths:
                 type: array
                 items:
                   type: string
+
+                  paths:
+  /categories:
+    get:
+      tags:
+        - Categories
+      responses:
+        '200':
+          description: Successfully fetched
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+                  
