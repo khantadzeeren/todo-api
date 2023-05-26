@@ -9,7 +9,7 @@ const GetAllCategories= async (req, res) => {
             
         }
     })
-    return res.status(200).json(data);
+    return res.status(200).json(newData);
 }
 
 export default GetAllCategories
