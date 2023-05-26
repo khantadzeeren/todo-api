@@ -10,7 +10,7 @@ const todoSchema = new Schema({
         required: true,
       },
       id: {
-        type: Schema.Types.String,
+        type: Schema.Types.Number,
         required: true,
       },
 });

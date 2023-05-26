@@ -25,18 +25,32 @@ paths:
                 type: array
                 items:
                   type: string
-                  
+
   /item:
     post:
       tags:
         - Todos
+      requestBody:
+        description: create todo
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                item:
+                  type: string
+                completed: 
+                  type: string
+                id:
+                  type: number
+            example:
+              item: Do chores
+              completed: true
+              id: 2
       responses:
         '200':
-          description: Success
-          content:
-            application/json:
-              schema:
-                type: string
+          description: todo created
 
   /categories:
     get:
