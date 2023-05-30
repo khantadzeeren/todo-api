@@ -5,7 +5,7 @@ info:
   version: 0.1.9
 
 servers:
-  - url: https://todo-api-j0cv.onrender.com
+  - url: https://todo-api-j0cv.onrender.com/api
     description: production server
 
   - url: http://localhost:3000/api
@@ -83,8 +83,6 @@ paths:
       responses:
         '200':
           description: todo deleted
-
-  /item/{id}:
     put:
       tags:
         - Toggle
