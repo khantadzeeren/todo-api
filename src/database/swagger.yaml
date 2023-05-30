@@ -66,7 +66,7 @@ paths:
                 items:
                   type: string
 
-  /delete:
+  /item/{id}:
     delete:
       tags:
         - Delete
@@ -83,3 +83,26 @@ paths:
       responses:
         '200':
           description: todo deleted
+
+  /item/{id}:
+    put:
+      tags:
+        - Toggle
+      summary: Update a ToDo item.
+      description: Updates the `done` status of the ToDo item with the specified ID. The request body should include a `done` field with a boolean value indicating whether the task is completed or not.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                item:
+                  type: string
+                completed: 
+                  type: boolean
+                id:
+                  type: number
+      responses:
+        '200':
+          description: todo updated
