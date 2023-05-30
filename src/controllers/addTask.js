@@ -13,8 +13,8 @@ export const addTask = async (req, res) => {
   }
 
   const {item, completed, id} =value;
-  const lastTask = await Project.find().sort({_id: -1}).limit(1);
-   id = lastTask.length > 0 ? lastTask[0].id +1 : 1; 
+ 
+   
 
   await Project.create({
     item,

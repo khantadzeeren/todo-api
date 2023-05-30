@@ -41,7 +41,7 @@ paths:
                 item:
                   type: string
                 completed: 
-                  type: string
+                  type: boolean
                 id:
                   type: number
             example:
@@ -65,3 +65,21 @@ paths:
                 type: array
                 items:
                   type: string
+
+  /delete:
+    delete:
+      tags:
+        - Delete
+      summary: Delete a ToDo item.
+      description: Deletes the ToDo item with the specified ID from the database.
+      parameters:
+        - name: id
+          in: query
+          description: The ID of the ToDo item to delete.
+          schema:
+            type: integer
+            format: int64
+          required: true
+      responses:
+        '200':
+          description: todo deleted

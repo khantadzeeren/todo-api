@@ -6,8 +6,8 @@ const addTaskSchema = async (data) => {
       "string.base": "item should be a string",
       "any.required": "item is required",
     }),
-    completed: Joi.string().required().messages({
-      "string.base": "completed should be a string",
+    completed: Joi.boolean().required().messages({
+      "string.base": "completed should be boolean",
       "any.required": "completed is required",
     }),
     id: Joi.number().required().messages({

@@ -13,7 +13,7 @@ router.get("/items", GetAllTodo);
 
 router.delete("/item/:id", removeTask);
 
-router.put("/item/:id", toggleTask );
+router.put("/item/:id", toggleTask);
 
  
 export default router;
